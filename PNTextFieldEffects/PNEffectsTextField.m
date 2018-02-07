@@ -23,7 +23,7 @@
 
 #pragma mark --- Subclass hooks
 
-- (void)animteViewsForTextEntry {
+- (void)animateViewsForTextEntry {
     NSAssert(false, @"must be overridden", __PRETTY_FUNCTION__);
 }
 
@@ -50,7 +50,7 @@
 - (void)setText:(NSString *)text {
     [super setText:text];
     if (text && text.length != 0) {
-        [self animteViewsForTextEntry];
+        [self animateViewsForTextEntry];
     } else {
         [self animateViewsForTextDisplay];
     }
@@ -71,7 +71,7 @@
 }
 
 - (void)textFieldDidEndEditing {
-    [self animteViewsForTextEntry];
+    [self animateViewsForTextEntry];
 }
 
 // MARK: - Interface Buider

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186B4154202B07BF00F5CFD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B4153202B07BF00F5CFD7 /* AppDelegate.swift */; };
+		186B4156202B07BF00F5CFD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B4155202B07BF00F5CFD7 /* ViewController.swift */; };
+		186B4159202B07BF00F5CFD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B4157202B07BF00F5CFD7 /* Main.storyboard */; };
+		186B415B202B07BF00F5CFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186B415A202B07BF00F5CFD7 /* Assets.xcassets */; };
+		186B415E202B07BF00F5CFD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B415C202B07BF00F5CFD7 /* LaunchScreen.storyboard */; };
+		186B4167202B096600F5CFD7 /* PNKaedeTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 186B4165202B096600F5CFD7 /* PNKaedeTextField.h */; };
+		186B4168202B096600F5CFD7 /* PNKaedeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B4166202B096600F5CFD7 /* PNKaedeTextField.m */; };
+		186B416A202B161B00F5CFD7 /* PNTextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C1F66E201EEA71000E610B /* PNTextFieldEffects.framework */; };
 		18C1F673201EEA71000E610B /* PNTextFieldEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C1F671201EEA71000E610B /* PNTextFieldEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18C1F67D201EEAD6000E610B /* PNEffectsTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 18C1F67B201EEAD6000E610B /* PNEffectsTextField.h */; };
 		18C1F67E201EEAD6000E610B /* PNEffectsTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C1F67C201EEAD6000E610B /* PNEffectsTextField.m */; };
@@ -15,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186B4151202B07BF00F5CFD7 /* PNTextFieldEffectsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PNTextFieldEffectsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		186B4153202B07BF00F5CFD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		186B4155202B07BF00F5CFD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		186B4158202B07BF00F5CFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		186B415A202B07BF00F5CFD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		186B415D202B07BF00F5CFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		186B415F202B07BF00F5CFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186B4165202B096600F5CFD7 /* PNKaedeTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNKaedeTextField.h; sourceTree = "<group>"; };
+		186B4166202B096600F5CFD7 /* PNKaedeTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNKaedeTextField.m; sourceTree = "<group>"; };
 		18C1F66E201EEA71000E610B /* PNTextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PNTextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C1F671201EEA71000E610B /* PNTextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNTextFieldEffects.h; sourceTree = "<group>"; };
 		18C1F672201EEA71000E610B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,6 +42,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		186B414E202B07BF00F5CFD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B416A202B161B00F5CFD7 /* PNTextFieldEffects.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C1F66A201EEA71000E610B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,11 +60,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186B4152202B07BF00F5CFD7 /* PNTextFieldEffectsExample */ = {
+			isa = PBXGroup;
+			children = (
+				186B4153202B07BF00F5CFD7 /* AppDelegate.swift */,
+				186B4155202B07BF00F5CFD7 /* ViewController.swift */,
+				186B4157202B07BF00F5CFD7 /* Main.storyboard */,
+				186B415A202B07BF00F5CFD7 /* Assets.xcassets */,
+				186B415C202B07BF00F5CFD7 /* LaunchScreen.storyboard */,
+				186B415F202B07BF00F5CFD7 /* Info.plist */,
+			);
+			path = PNTextFieldEffectsExample;
+			sourceTree = "<group>";
+		};
+		186B4169202B161B00F5CFD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		18C1F664201EEA71000E610B = {
 			isa = PBXGroup;
 			children = (
 				18C1F670201EEA71000E610B /* PNTextFieldEffects */,
+				186B4152202B07BF00F5CFD7 /* PNTextFieldEffectsExample */,
 				18C1F66F201EEA71000E610B /* Products */,
+				186B4169202B161B00F5CFD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				18C1F66E201EEA71000E610B /* PNTextFieldEffects.framework */,
+				186B4151202B07BF00F5CFD7 /* PNTextFieldEffectsExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +107,8 @@
 				18C1F67C201EEAD6000E610B /* PNEffectsTextField.m */,
 				18C1F67F201EF1E8000E610B /* PNAkiraTextField.h */,
 				18C1F680201EF1E9000E610B /* PNAkiraTextField.m */,
+				186B4165202B096600F5CFD7 /* PNKaedeTextField.h */,
+				186B4166202B096600F5CFD7 /* PNKaedeTextField.m */,
 				18C1F672201EEA71000E610B /* Info.plist */,
 			);
 			path = PNTextFieldEffects;
@@ -72,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C1F681201EF1E9000E610B /* PNAkiraTextField.h in Headers */,
+				186B4167202B096600F5CFD7 /* PNKaedeTextField.h in Headers */,
 				18C1F673201EEA71000E610B /* PNTextFieldEffects.h in Headers */,
 				18C1F67D201EEAD6000E610B /* PNEffectsTextField.h in Headers */,
 			);
@@ -80,6 +131,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		186B4150202B07BF00F5CFD7 /* PNTextFieldEffectsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186B4162202B07BF00F5CFD7 /* Build configuration list for PBXNativeTarget "PNTextFieldEffectsExample" */;
+			buildPhases = (
+				186B414D202B07BF00F5CFD7 /* Sources */,
+				186B414E202B07BF00F5CFD7 /* Frameworks */,
+				186B414F202B07BF00F5CFD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PNTextFieldEffectsExample;
+			productName = PNTextFieldEffectsExample;
+			productReference = 186B4151202B07BF00F5CFD7 /* PNTextFieldEffectsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		18C1F66D201EEA71000E610B /* PNTextFieldEffects */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C1F676201EEA71000E610B /* Build configuration list for PBXNativeTarget "PNTextFieldEffects" */;
@@ -104,9 +172,14 @@
 		18C1F665201EEA71000E610B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Pszertlek;
 				TargetAttributes = {
+					186B4150202B07BF00F5CFD7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					18C1F66D201EEA71000E610B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -119,6 +192,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 18C1F664201EEA71000E610B;
 			productRefGroup = 18C1F66F201EEA71000E610B /* Products */;
@@ -126,11 +200,22 @@
 			projectRoot = "";
 			targets = (
 				18C1F66D201EEA71000E610B /* PNTextFieldEffects */,
+				186B4150202B07BF00F5CFD7 /* PNTextFieldEffectsExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		186B414F202B07BF00F5CFD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B415E202B07BF00F5CFD7 /* LaunchScreen.storyboard in Resources */,
+				186B415B202B07BF00F5CFD7 /* Assets.xcassets in Resources */,
+				186B4159202B07BF00F5CFD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C1F66C201EEA71000E610B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,18 +226,80 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		186B414D202B07BF00F5CFD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B4156202B07BF00F5CFD7 /* ViewController.swift in Sources */,
+				186B4154202B07BF00F5CFD7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18C1F669201EEA71000E610B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18C1F682201EF1E9000E610B /* PNAkiraTextField.m in Sources */,
 				18C1F67E201EEAD6000E610B /* PNEffectsTextField.m in Sources */,
+				186B4168202B096600F5CFD7 /* PNKaedeTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		186B4157202B07BF00F5CFD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186B4158202B07BF00F5CFD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		186B415C202B07BF00F5CFD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186B415D202B07BF00F5CFD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		186B4160202B07BF00F5CFD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				INFOPLIST_FILE = PNTextFieldEffectsExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pszertlek.PNTextFieldEffectsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		186B4161202B07BF00F5CFD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEZ4TNATDY;
+				INFOPLIST_FILE = PNTextFieldEffectsExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Pszertlek.PNTextFieldEffectsExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		18C1F674201EEA71000E610B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -306,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		186B4162202B07BF00F5CFD7 /* Build configuration list for PBXNativeTarget "PNTextFieldEffectsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186B4160202B07BF00F5CFD7 /* Debug */,
+				186B4161202B07BF00F5CFD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		18C1F668201EEA71000E610B /* Build configuration list for PBXProject "PNTextFieldEffects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

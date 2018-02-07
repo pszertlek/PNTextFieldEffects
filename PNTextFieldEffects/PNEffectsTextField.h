@@ -18,9 +18,9 @@ typedef void (^PNAnimationCompletionHandler)(PNTextAnimationType);
 @interface PNEffectsTextField : UITextField
 
 @property (nonatomic, readonly) UILabel *placeHolderLabel;
-
+@property (nonatomic, copy) PNAnimationCompletionHandler animationCompletionHandler;
 #pragma mark --- subclass hooks
-- (void)animteViewsForTextEntry;
+- (void)animateViewsForTextEntry;
 
 - (void)animateViewsForTextDisplay;
 
