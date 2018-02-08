@@ -20,6 +20,26 @@
 IB_DESIGNABLE
 @implementation PNKaedeTextField
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.placeholderFontScale = 0.8;
+        self.foregroundView = [[UIView alloc] init];
+        self.placeholderInsets = CGPointMake(10, 5);
+        self.textFieldInsets = CGPointMake(10, 0);
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        self.placeholderFontScale = 0.8;
+        self.foregroundView = [[UIView alloc] init];
+        self.placeholderInsets = CGPointMake(10, 5);
+        self.textFieldInsets = CGPointMake(10, 0);
+    }
+    return self;
+}
+
 - (void)setPlaceholderColor:(UIColor *)placeholderColor {
     _placeholderColor = [placeholderColor copy];
     [self updatePlaceholder];
@@ -30,6 +50,21 @@ IB_DESIGNABLE
     [self updatePlaceholder];
 }
 
+- (void)setPlaceholderFontScale:(CGFloat)placeholderFontScale {
+    _placeholderFontScale = placeholderFontScale;
+    [self updatePlaceholder];
+}
+
+- (void)setForegroundColor:(UIColor *)foregroundColor {
+    _foregroundColor = foregroundColor;
+    [self updateForegroundColor];
+}
+
+- (void)setBounds:(CGRect)bounds {
+    [super setBounds:bounds];
+    [self drawViewsForRect:bounds];
+}
+
 #pragma mark --- PNTextFieldEffects
 
 - (void)drawViewsForRect:(CGRect)rect {
@@ -37,14 +72,14 @@ IB_DESIGNABLE
 
     self.foregroundView.frame = frame;
     self.foregroundView.userInteractionEnabled = false;
-    self.placeHolderLabel.frame = CGRectInset(frame, _placeholderInsets.x, _placeholderInsets.y);
+    self.placeholderLabel.frame = CGRectInset(frame, _placeholderInsets.x, _placeholderInsets.y);
     [self updateForegroundColor];
     [self updatePlaceholder];
     if ((self.text && self.text.length) || self.isFirstResponder) {
         [self animateViewsForTextEntry];
     }
     [self addSubview:self.foregroundView];
-    [self addSubview:self.placeHolderLabel];
+    [self addSubview:self.placeholderLabel];
 }
 
 - (void)animateViewsForTextEntry {
@@ -55,7 +90,7 @@ IB_DESIGNABLE
         directionOverride = 1.0;
     }
     [UIView animateWithDuration:0.35 delay:0.0 usingSpringWithDamping:0.8 initialSpringVelocity:2.0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-        self.placeHolderLabel.frame = CGRectMake(self.frame.size.width * 0.65 * directionOverride, self.placeholderInsets.y, self.placeHolderLabel.frame.size.width, self.placeHolderLabel.frame.size.height);
+        self.placeholderLabel.frame = CGRectMake(self.frame.size.width * 0.65 * directionOverride, self.placeholderInsets.y, self.placeholderLabel.frame.size.width, self.placeholderLabel.frame.size.height);
     } completion:nil];
     [UIView animateWithDuration:0.45 delay:0.0 usingSpringWithDamping:0.8 initialSpringVelocity:1.5 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         self.foregroundView.frame = CGRectMake(self.frame.size.width * 0.6 * directionOverride, 0, self.foregroundView.frame.size.width, self.foregroundView.frame.size.height);
@@ -67,9 +102,9 @@ IB_DESIGNABLE
 }
 
 - (void)animateViewsForTextDisplay {
-    if (self.text && self.text.length != 0) {
+    if (!self.text || self.text.length == 0) {
         [UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:0.8 initialSpringVelocity:2.0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-            self.placeHolderLabel.frame = CGRectMake(self.placeholderInsets.x, self.placeholderInsets.y, self.placeHolderLabel.frame.size.width, self.placeHolderLabel.frame.size.height);
+            self.placeholderLabel.frame = CGRectMake(self.placeholderInsets.x, self.placeholderInsets.y, self.placeholderLabel.frame.size.width, self.placeholderLabel.frame.size.height);
         } completion:nil];
         [UIView animateWithDuration:0.3 delay:0.0 usingSpringWithDamping:1.0 initialSpringVelocity:2.0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             self.foregroundView.frame = CGRectMake(0, 0, self.foregroundView.frame.size.width, self.foregroundView.frame.size.height);
@@ -88,8 +123,8 @@ IB_DESIGNABLE
 }
 
 - (void)updatePlaceholder {
-    self.placeHolderLabel.text = self.placeholder;
-    self.placeHolderLabel.textColor = self.placeholderColor;
+    self.placeholderLabel.text = self.placeholder;
+    self.placeholderLabel.textColor = self.placeholderColor;
 }
 
 - (UIFont *)placeholderFontFromFont:(UIFont *)font {

@@ -16,7 +16,14 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        NSLog(@"sss%s",__PRETTY_FUNCTION__);
+        _placeholderLabel = [[UILabel alloc] init];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        _placeholderLabel = [[UILabel alloc] init];
     }
     return self;
 }
@@ -47,6 +54,10 @@
     }
 }
 
+- (void)drawPlaceholderInRect:(CGRect)rect {
+    // do nothing
+}
+
 - (void)setText:(NSString *)text {
     [super setText:text];
     if (text && text.length != 0) {
@@ -67,11 +78,11 @@
 }
 
 - (void)textFieldDidBeginEditing {
-    [self animateViewsForTextDisplay];
+    [self animateViewsForTextEntry];
 }
 
 - (void)textFieldDidEndEditing {
-    [self animateViewsForTextEntry];
+    [self animateViewsForTextDisplay];
 }
 
 // MARK: - Interface Buider

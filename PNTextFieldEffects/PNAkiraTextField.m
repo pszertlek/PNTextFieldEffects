@@ -78,17 +78,17 @@ IB_DESIGNABLE
     [self updateBorder];
     [self updatePlaceholder];
     
-    [self addSubview:self.placeHolderLabel];
+    [self addSubview:self.placeholderLabel];
     [self.layer addSublayer:self.borderLayer];
 }
 
 #pragma mark --- Privates
 
 - (void)updatePlaceholder {
-    self.placeHolderLabel.frame = [self placeholderRectForBounds:self.bounds];
-    self.placeHolderLabel.text = self.placeholder;
-    self.placeHolderLabel.font = [self placeholderFontFromFont:self.font];
-    self.placeHolderLabel.textAlignment = self.textAlignment;
+    self.placeholderLabel.frame = [self placeholderRectForBounds:self.bounds];
+    self.placeholderLabel.text = self.placeholder;
+    self.placeholderLabel.font = [self placeholderFontFromFont:self.font];
+    self.placeholderLabel.textAlignment = self.textAlignment;
 }
 
 
