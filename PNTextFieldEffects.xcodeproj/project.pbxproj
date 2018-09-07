@@ -15,6 +15,10 @@
 		186B4167202B096600F5CFD7 /* PNKaedeTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 186B4165202B096600F5CFD7 /* PNKaedeTextField.h */; };
 		186B4168202B096600F5CFD7 /* PNKaedeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B4166202B096600F5CFD7 /* PNKaedeTextField.m */; };
 		186B416A202B161B00F5CFD7 /* PNTextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C1F66E201EEA71000E610B /* PNTextFieldEffects.framework */; };
+		187DA804214255C300AF3F27 /* PNMinoruTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 187DA802214255C300AF3F27 /* PNMinoruTextField.h */; };
+		187DA805214255C300AF3F27 /* PNMinoruTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DA803214255C300AF3F27 /* PNMinoruTextField.m */; };
+		187DA808214257AC00AF3F27 /* PNIsaoTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 187DA806214257AC00AF3F27 /* PNIsaoTextField.h */; };
+		187DA809214257AC00AF3F27 /* PNIsaoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 187DA807214257AC00AF3F27 /* PNIsaoTextField.m */; };
 		189A75BE21412889006F06BE /* PNJiroTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 189A75BC21412889006F06BE /* PNJiroTextField.h */; };
 		189A75BF21412889006F06BE /* PNJiroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 189A75BD21412889006F06BE /* PNJiroTextField.m */; };
 		18B6F043202C23D300EA670C /* PNHoshiTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 18B6F041202C23D300EA670C /* PNHoshiTextField.h */; };
@@ -36,6 +40,10 @@
 		186B415F202B07BF00F5CFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		186B4165202B096600F5CFD7 /* PNKaedeTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNKaedeTextField.h; sourceTree = "<group>"; };
 		186B4166202B096600F5CFD7 /* PNKaedeTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNKaedeTextField.m; sourceTree = "<group>"; };
+		187DA802214255C300AF3F27 /* PNMinoruTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNMinoruTextField.h; sourceTree = "<group>"; };
+		187DA803214255C300AF3F27 /* PNMinoruTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNMinoruTextField.m; sourceTree = "<group>"; };
+		187DA806214257AC00AF3F27 /* PNIsaoTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNIsaoTextField.h; sourceTree = "<group>"; };
+		187DA807214257AC00AF3F27 /* PNIsaoTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNIsaoTextField.m; sourceTree = "<group>"; };
 		189A75BC21412889006F06BE /* PNJiroTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNJiroTextField.h; sourceTree = "<group>"; };
 		189A75BD21412889006F06BE /* PNJiroTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PNJiroTextField.m; sourceTree = "<group>"; };
 		18B6F041202C23D300EA670C /* PNHoshiTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PNHoshiTextField.h; sourceTree = "<group>"; };
@@ -121,6 +129,10 @@
 				18B6F042202C23D300EA670C /* PNHoshiTextField.m */,
 				189A75BC21412889006F06BE /* PNJiroTextField.h */,
 				189A75BD21412889006F06BE /* PNJiroTextField.m */,
+				187DA802214255C300AF3F27 /* PNMinoruTextField.h */,
+				187DA803214255C300AF3F27 /* PNMinoruTextField.m */,
+				187DA806214257AC00AF3F27 /* PNIsaoTextField.h */,
+				187DA807214257AC00AF3F27 /* PNIsaoTextField.m */,
 				18C1F672201EEA71000E610B /* Info.plist */,
 			);
 			path = PNTextFieldEffects;
@@ -133,7 +145,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187DA804214255C300AF3F27 /* PNMinoruTextField.h in Headers */,
 				18C1F681201EF1E9000E610B /* PNAkiraTextField.h in Headers */,
+				187DA808214257AC00AF3F27 /* PNIsaoTextField.h in Headers */,
 				186B4167202B096600F5CFD7 /* PNKaedeTextField.h in Headers */,
 				18C1F673201EEA71000E610B /* PNTextFieldEffects.h in Headers */,
 				18B6F043202C23D300EA670C /* PNHoshiTextField.h in Headers */,
@@ -256,8 +270,10 @@
 				18C1F682201EF1E9000E610B /* PNAkiraTextField.m in Sources */,
 				189A75BF21412889006F06BE /* PNJiroTextField.m in Sources */,
 				18C1F67E201EEAD6000E610B /* PNEffectsTextField.m in Sources */,
+				187DA809214257AC00AF3F27 /* PNIsaoTextField.m in Sources */,
 				186B4168202B096600F5CFD7 /* PNKaedeTextField.m in Sources */,
 				18B6F044202C23D300EA670C /* PNHoshiTextField.m in Sources */,
+				187DA805214255C300AF3F27 /* PNMinoruTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
