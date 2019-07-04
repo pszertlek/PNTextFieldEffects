@@ -13,5 +13,4 @@
 @property (nonatomic, strong) IBInspectable UIColor *placeholderColor;
 @property (nonatomic, assign) IBInspectable CGFloat placeholderFontScale;
 
-
 @end
